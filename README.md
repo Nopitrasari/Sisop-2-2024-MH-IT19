@@ -187,6 +187,44 @@ diatas adalah isi dari file virus.log
 berikut adalah fungsi untuk memproses file 
 
 ```
+//fungsi untuk memproses file
+void fileProses(const char *pathFolder)
+{
+    DIR *dir;
+    char pathFile[MAX_PATH_LEN];
+    struct dirent *ent;
+
+    dir = opendir(pathFolder);
+    if (dir == NULL) {
+        perror("Error: tidak bisa membuka folder");
+        exit(EXIT_FAILURE);
+    }
+    while ((ent = readdir(dir)) != NULL) {
+        if (ent->d_type == DT_REG) {
+            snprintf(pathFile, sizeof(pathFile), "%s/%s", pathFolder, ent->d_name);
+            FILE *file = fopen(pathFile, "r+");
+            if (file == NULL) {
+                perror("Error: tidak bisa membuka file");
+                continue;
+            }
+
+            char line[MAX_LINE_LEN];
+            while (fgets(line, sizeof(line), file) != NULL) {
+                gantiString(line);
+                fseek(file, -strlen(line), SEEK_CUR);
+                fputs(line, file);
+                fflush(file);
+            }
+
+            fclose(file);
+            hapusString(ent->d_name);
+        }
+    }
+
+    closedir(dir);
+}
+
+
 ```
 
 
