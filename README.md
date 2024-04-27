@@ -132,6 +132,26 @@ d. agar program berjalan secara terus menerus dengan jeda 15 detik, disini mengg
 e. untuk menjawab soal e, hasil dari penghapusan file akan muncul di file virus.log sesuai dengan format di soal menggunakan fungsi berikut :
 
 ```
+//fungsi untuk mencatat penghapusan string oleh virus.log
+void hapusString(const char *namaFile)
+{
+    struct tm *local_time;
+    char time_str[50];
+    time_t waktu;
+    time(&waktu);
+    local_time = localtime(&waktu);
+    strftime(time_str, sizeof(time_str), "%d-%m-%Y %H:%M:%S", local_time);
+
+    FILE *virusLog = fopen("/home/riskiya/Documents/tes/virus.log", "a"); //penempatan vitus.log
+        if (virusLog != NULL) {
+        fprintf(virusLog, "[%s] Suspicious string at %s successfully replaced!\n", time_str, namaFile); //format dalam file virus.log
+        fclose(virusLog);
+    }
+
+        else {
+        perror("error:tidak bisa membuka");
+    }
+}
 
 ```
 
