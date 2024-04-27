@@ -92,6 +92,7 @@ void gantiString(char *str)
 
 ini file sebelum di run
 
+![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/537d2d25-0758-4283-a55a-4ff525def926)
 
 
 dan ini untuk hasil setelah di run
