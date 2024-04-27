@@ -14,9 +14,11 @@ Gavriel adalah seorang cyber security enthusiast. Suatu hari, ia dikontrak oleh 
 a. Program dapat menerima input path berupa ‘argv’ untuk mengatur folder dimana file akan dieksekusi
 
 b. Program tersebut berfungsi untuk mereplace string dengan ketentuan sebagai berikut:
-String m4LwAr3 direplace dengan string [MALWARE]
-String 5pYw4R3 direplace dengan string [SPYWARE]
-String R4nS0mWaR3 direplace dengan string [RANSOMWARE]
+  String m4LwAr3 direplace dengan string [MALWARE]
+
+  String 5pYw4R3 direplace dengan string [SPYWARE]
+
+  String R4nS0mWaR3 direplace dengan string [RANSOMWARE]
 
 c. Program harus berjalan secara daemon, dan tidak diperbolehkan menggunakan command system() dalam pembuatan program
 
@@ -40,4 +42,66 @@ pU=-JWQ$5$)D-[??%AVh]$cB6b[MALWARE]jEQC2p3R{HV]=-AUaxj:Qe+h
 Pd&f8$F5=E?@#[6jd{TJKj][SPYWARE]{KK1?hz384$ge@iba5GAj$gqB41
 #C&&a}M9C#f64Eb.?%c)dGbCvJXtU[?SE4h]BY4e1P[RANSOMWARE]{]S/{w?*
 
+# PENYELESAIAN
 
+a. untuk soal a saya menggunakan kode dibawah, Program dapat menerima input path berupa ‘argv’
+
+```
+```
+
+b. untuk menjawab soal b, saya menggunakan fungsi dibawah ini, fungsi ini akan berjalan sesuai dengan format di soal
+
+```
+```
+
+ini file sebelum di run
+
+
+
+dan ini untuk hasil setelah di run
+
+![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/977c664c-b672-43c7-8aae-8b63802a5c17)
+
+
+c. sesuai dengan soal yang c, file harus berjalan secara daemon, menggunakan kode berikut :
+
+```
+```
+
+![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/c0faf4e9-b702-4526-bded-15da6f798dc0)
+
+diatas adalah bukti bahwa file sudah berjalan secara daemon.
+
+
+d. agar program berjalan secara terus menerus dengan jeda 15 detik, disini menggunakan kode berikut :
+
+```
+```
+
+e. untuk menjawab soal e, hasil dari penghapusan file akan muncul di file virus.log sesuai dengan format di soal menggunakan fungsi berikut :
+
+```
+
+```
+
+![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/fa42c0e3-ad3f-450a-a953-747668cad68b)
+
+diatas adalah isi dari file virus.log
+
+# REVISI 
+
+mohon maaf mas sebenarnya kemarin pas demo saya kurang teliti dan buru buru, jadi ada kesalahan disaat ngerun
+seharusnya 
+
+```
+./virus home/riskiya/Documents/tes
+
+```
+
+yang saya demokan kemarin 
+
+```
+./virus home/riskiya/Document/tes
+
+```
+jadi kesalahan dalam penulisan 'document', setelah saya coba lagi dengan code yang sama akhirnya bisa jalan
