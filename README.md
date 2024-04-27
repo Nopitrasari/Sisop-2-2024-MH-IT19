@@ -335,8 +335,9 @@ setelah saya command dengan
 gcc management.c -o management
 ```
 muncul seperti ini :
+<img width="749" alt="Output management c file" src="https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/149749135/3c6fbf8b-8c65-4128-90ad-f0cd6bf5bb47">
 
-
+<img width="742" alt="Output management c file config 2 " src="https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/149749135/09a77c72-f5f0-471e-b2d0-e8075f7970b8">
 
 memang muncul beberapa syntax yang error.
 
@@ -346,19 +347,24 @@ Sejujurnya saya mohon maaf tidak bisa menyelesaikan soal 2 ini dikarenakan kami 
 # SOAL 3
 
 Pak Heze adalah seorang admin yang baik. Beliau ingin membuat sebuah program admin yang dapat memantau para pengguna sistemnya. Bantulah Pak Heze untuk membuat program  tersebut!
+
   a. Nama program tersebut dengan nama admin.c
+  
   b. Program tersebut memiliki fitur menampilkan seluruh proses yang dilakukan oleh seorang user dengan menggunakan command:
     ./admin <user>
+    
   c. Program dapat memantau proses apa saja yang dilakukan oleh user. Fitur ini membuat program berjalan secara daemon dan berjalan terus menerus. Untuk menjalankan fitur       ini menggunakan command: 
     ./admin -m <user>
     Dan untuk mematikan fitur tersebut menggunakan: 
     ./admin -s <user>
+    
   d. Program akan mencatat seluruh proses yang dijalankan oleh user di file <user>.log dengan format:
     [dd:mm:yyyy]-[hh:mm:ss]_pid-process_nama-process_GAGAL/JALAN
     Program dapat menggagalkan proses yang dijalankan user setiap detik secara terus menerus dengan menjalankan: 
     ./admin -c user
     sehingga user tidak bisa menjalankan proses yang dia inginkan dengan baik. Fitur ini dapat dimatikan dengan command:
     ./admin -a user
+    
   e. Ketika proses yang dijalankan user digagalkan, program juga akan melog dan menset log tersebut sebagai GAGAL. Dan jika di log menggunakan fitur poin c, log akan             ditulis dengan JALAN
 
 
@@ -481,11 +487,11 @@ untuk menjawab point b maka saya menyimpan program saya di setup.c file dan memb
 ```
 Dengan begitu muncul tampilan browser firefox 2 window
 
-
+<img width="835" alt="Buka jendela firefox" src="https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/149749135/59d806ec-ce0d-4b97-8086-8c25d82e1872">
 
 serta 2 aplikasi wireshark yang sudah menampilkan tampilan 
 
-
+<img width="860" alt="Buka Wireshark 2 " src="https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/149749135/ff823f47-6290-4230-bd70-4e4217c07ca3">
 
 
 jika saya menjalankan program saya maka hasil dari 
@@ -494,6 +500,7 @@ jika saya menjalankan program saya maka hasil dari
 ```
 menghasilkan output : 
 
+<img width="739" alt="Output dengan file config" src="https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/149749135/2f20dce8-caf0-4d1c-bfec-e2c8ff614330">
 
 Jadi, sejujurnya saya masih belum bisa menyelesaikan soal nomor 4 sepenuhnya.
 
