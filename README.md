@@ -14,11 +14,8 @@ Gavriel adalah seorang cyber security enthusiast. Suatu hari, ia dikontrak oleh 
 a. Program dapat menerima input path berupa ‘argv’ untuk mengatur folder dimana file akan dieksekusi
 
 b. Program tersebut berfungsi untuk mereplace string dengan ketentuan sebagai berikut:
-
 String m4LwAr3 direplace dengan string [MALWARE]
-
 String 5pYw4R3 direplace dengan string [SPYWARE]
-
 String R4nS0mWaR3 direplace dengan string [RANSOMWARE]
 
 c. Program harus berjalan secara daemon, dan tidak diperbolehkan menggunakan command system() dalam pembuatan program
