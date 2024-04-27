@@ -539,13 +539,19 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
+# REVISI 
+- pada saat saya menggunakan command ``` ./admin -c nopii ``` laptop saya mengalami lag dan vm saya langsung tidak berjalan
+- lalu saya menggunakan command ```./admin nopii ``` masih tidak muncul apa apa malah di anjurkan menggunakan command yang lain.
+- berikut output saat menggunakan command ``` ./admin -m nopii ``` 
 
 
+![Screenshot from 2024-04-27 20-53-16](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151106171/e7fbe82f-1f68-4adb-95d6-4c694e8634dc)
 
+berikut isi file log nya : 
 
+![Screenshot from 2024-04-27 20-53-57](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151106171/2ff44023-b5ed-4d6b-b478-05ff1bf750d7)
 
-
-
+- untuk daemon nya masih terus berjalan karena ketika saya jalankan command ``` ./admin -c nopii ``` laptop saya mengalami lag jadi saya tidak dapat menuntaskan pengerjaan.
 
 
 
