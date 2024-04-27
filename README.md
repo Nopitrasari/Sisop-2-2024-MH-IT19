@@ -96,7 +96,7 @@ ini file sebelum di run
 
 dan ini untuk hasil setelah di run
 
-![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/977c664c-b672-43c7-8aae-8b63802a5c17)
+![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/88ff4125-f5cc-46bf-b495-8627db040a95)
 
 
 c. sesuai dengan soal yang c, file harus berjalan secara daemon, menggunakan kode berikut :
@@ -135,7 +135,8 @@ void daemonize()
 
 ```
 
-![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/c0faf4e9-b702-4526-bded-15da6f798dc0)
+![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/f28209ec-5434-4289-9775-8a3a45f032b0)
+
 
 diatas adalah bukti bahwa file sudah berjalan secara daemon.
 
@@ -179,9 +180,15 @@ void hapusString(const char *namaFile)
 
 ```
 
-![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/fa42c0e3-ad3f-450a-a953-747668cad68b)
+![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/67b7e2f6-afb9-4506-bce1-09954fe8730f)
 
 diatas adalah isi dari file virus.log
+
+berikut adalah fungsi untuk memproses file 
+
+```
+```
+
 
 # REVISI 
 
