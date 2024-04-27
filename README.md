@@ -14,6 +14,7 @@ Gavriel adalah seorang cyber security enthusiast. Suatu hari, ia dikontrak oleh 
 a. Program dapat menerima input path berupa ‘argv’ untuk mengatur folder dimana file akan dieksekusi
 
 b. Program tersebut berfungsi untuk mereplace string dengan ketentuan sebagai berikut:
+
   String m4LwAr3 direplace dengan string [MALWARE]
 
   String 5pYw4R3 direplace dengan string [SPYWARE]
@@ -52,6 +53,25 @@ a. untuk soal a saya menggunakan kode dibawah, Program dapat menerima input path
 b. untuk menjawab soal b, saya menggunakan fungsi dibawah ini, fungsi ini akan berjalan sesuai dengan format di soal
 
 ```
+//fungsi untuk mengganti string
+void gantiString(char *str)
+{
+    if (strstr(str, "5pYw4R3") != NULL)
+    {
+        strcpy(str, "[SPYWARE]");
+    }
+
+    if (strstr(str, "m4LwAr3") != NULL)
+    {
+        strcpy(str, "[MALWARE]");
+    }
+
+    if (strstr(str, "R4nS0mWaR3") != NULL)
+    {
+        strcpy(str, "[RANSOMWARE]");
+    }
+}
+
 ```
 
 ini file sebelum di run
