@@ -335,7 +335,9 @@ setelah saya command dengan
 gcc management.c -o management
 ```
 muncul seperti ini :
+
 <img width="749" alt="Output management c file" src="https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/149749135/3c6fbf8b-8c65-4128-90ad-f0cd6bf5bb47">
+
 
 <img width="742" alt="Output management c file config 2 " src="https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/149749135/09a77c72-f5f0-471e-b2d0-e8075f7970b8">
 
