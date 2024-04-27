@@ -48,6 +48,22 @@ Pd&f8$F5=E?@#[6jd{TJKj][SPYWARE]{KK1?hz384$ge@iba5GAj$gqB41
 a. untuk soal a saya menggunakan kode dibawah, Program dapat menerima input path berupa ‘argv’
 
 ```
+//fungsi main
+int main(int argc, char *argv[])
+{
+    if (argc != 2) {
+        fprintf(stderr, "Usage: %s <folder_path>\n", argv[0]);
+        exit(EXIT_FAILURE);
+    }
+
+    daemonize();
+    while (1) {
+        fileProses(argv[1]);
+        sleep(15); //terus berjalan dengan jeda 15 detik
+    }
+    return EXIT_SUCCESS;
+}
+
 ```
 
 b. untuk menjawab soal b, saya menggunakan fungsi dibawah ini, fungsi ini akan berjalan sesuai dengan format di soal
@@ -127,6 +143,14 @@ diatas adalah bukti bahwa file sudah berjalan secara daemon.
 d. agar program berjalan secara terus menerus dengan jeda 15 detik, disini menggunakan kode berikut :
 
 ```
+
+    daemonize();
+    while (1) {
+        fileProses(argv[1]);
+        sleep(15); //terus berjalan dengan jeda 15 detik
+    }
+    return EXIT_SUCCESS;
+
 ```
 
 e. untuk menjawab soal e, hasil dari penghapusan file akan muncul di file virus.log sesuai dengan format di soal menggunakan fungsi berikut :
