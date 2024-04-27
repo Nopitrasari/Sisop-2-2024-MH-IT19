@@ -86,6 +86,37 @@ dan ini untuk hasil setelah di run
 c. sesuai dengan soal yang c, file harus berjalan secara daemon, menggunakan kode berikut :
 
 ```
+//untuk menjalankan file dalam bentuk daemon
+void daemonize()
+{
+    pid_t pid;
+    pid_t sid;
+
+    pid = fork();
+    if (pid > 0){
+        exit(EXIT_SUCCESS);
+    }
+    if (pid < 0){
+        exit(EXIT_FAILURE);
+    }
+
+    umask(0);
+
+    sid = setsid();
+
+    if (sid < 0){
+        exit(EXIT_FAILURE);
+    }
+    if ((chdir("/")) < 0){
+        exit(EXIT_FAILURE);
+    }
+
+    close(STDIN_FILENO);
+    close(STDERR_FILENO);
+    close(STDOUT_FILENO);
+}
+
+
 ```
 
 ![image](https://github.com/Nopitrasari/Sisop-2-2024-MH-IT19/assets/151911480/c0faf4e9-b702-4526-bded-15da6f798dc0)
